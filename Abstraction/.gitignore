@@ -1,0 +1,17 @@
+node_modules
+
+node_modules
+
+# Logs
+
+logs
+
+
+
+# dotenv environment variables file
+
+.env
+
+# next.js build output
+
+.next

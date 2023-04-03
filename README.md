@@ -16,6 +16,14 @@ The topics the 4 pillars of object oriented programming are covered in this repo
 
 encapsulation is the process of binding data and methods together in a single unit. It is also known as data hiding. It is used to hide the implementation details from the user. It is used to achieve security and data integrity.
 
+Encapsulation is one of the fundamental principles of object-oriented programming. It involves hiding the implementation details of a class from the outside world, and providing a public interface for interacting with the class. This can help to keep the code modular, maintainable, and flexible.
+
+In TypeScript, encapsulation can be achieved by using access modifiers on class properties and methods. There are three access modifiers in TypeScript:
+
+public: The property or method is accessible from anywhere, both inside and outside the class.
+private: The property or method is only accessible from within the class. It cannot be accessed from outside the class, not even from subclasses.
+protected: The property or method is only accessible from within the class and its subclasses. It cannot be accessed from outside the class hierarchy.
+
  here is an example of encapsulation in TypeScript:
 
 ```typescript
@@ -51,7 +59,9 @@ in the above example, the name and age properties are private. This means that t
 ## Inheritance:
 
  Inheritance is the process of deriving a new class from an existing class. The new class is called the derived class and the existing class is called the base class. The derived class inherits the properties and methods of the base class. The derived class can also add its own properties and methods.
+ Inheritance is another fundamental principle of object-oriented programming. It involves creating a hierarchy of classes, where subclasses inherit properties and methods from their parent classes. This can help to keep the code organized, reusable, and extensible.
 
+In TypeScript, inheritance can be achieved by using the extends keyword to create a subclass that inherits from a parent class. The subclass can then add its own properties and methods, or override the ones inherited from the parent class
  here is an example of inheritance in TypeScript:
 
 ```typescript
@@ -177,6 +187,11 @@ printPerson(student); // John 20
 ## Abstraction:
 
  Abstraction is the process of hiding the implementation details from the user. It is used to achieve security and data integrity. It is achieved by using access modifiers. There are three access modifiers in TypeScript: public, private and protected.
+
+ Abstraction is an important concept in object-oriented programming (OOP) that allows you to hide the implementation details of a class or object from the user of that class or object. In TypeScript, abstraction can be achieved through the use of abstract classes and interfaces.
+
+Abstract Classes:
+An abstract class is a class that cannot be instantiated directly and is meant to be subclassed. Abstract classes are typically used to define a common interface for a set of subclasses, without implementing all the methods required for those subclasses. Abstract classes can define abstract methods, which must be implemented by their subclasses. Abstract classes can also define concrete methods, which can be called by subclasses.
 
  here is an example of abstraction in TypeScript:
 

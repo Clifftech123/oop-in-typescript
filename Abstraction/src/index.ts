@@ -3,6 +3,48 @@
 // Abstract class
 
 // abstract class Person 
+
+
+// Example 1 
+
+class PersonOne {
+    private name: string;
+    private age: number;
+    private id: number;
+
+
+    // constrictor appending  the properties to the class
+    constructor(name: string, age: number, id: number) {
+        this.name = name;
+        this.age = age;
+        this.id = id;
+    }
+
+    // method accessing the private properties
+
+    getName(): string {
+        return this.name;
+    }
+
+    getAge(): number {
+        return this.age;
+    }
+
+    getId(): number {
+        return this.id;
+    }
+
+
+}
+
+// creating an instance of the class
+
+const personOne = new PersonOne('John', 15, 1);
+console.log(personOne.getName()); // John
+console.log(personOne.getAge()); // 15
+console.log(personOne.getId()); // 1
+
+
 abstract class Person {
   public name: string;
   public age: number;
@@ -24,12 +66,6 @@ abstract class Person {
 }
  
 
-
-
-
-
-
-
 // class Student extends Person
 
 class Student extends Person {
@@ -45,6 +81,8 @@ class Student extends Person {
     }
 }
 
+
+// Creating an instance of the class
 const student = new Student('John', 15, 1, 10);
 student.talk(); // Hello, my name is John and I am 15 years old and I am in grade 10.
 
@@ -64,7 +102,7 @@ class Teacher extends Person {
 }
 
 
-// calling the mehtod
+//  Creating an instance of the class
 
 const teacher = new Teacher('Jane', 35, 2, 'Math');
 teacher.talk(); // Hello, my name is Jane and I am 35 years old and I teach Math.

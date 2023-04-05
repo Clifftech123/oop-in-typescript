@@ -79,5 +79,8 @@ class  Teachers  extends Person {
 
     teacher.talk(); // Output: "Hello, my name is Clifford and I am 30 years old. I am also a teacher with teacher ID 5678."
 
-    teacher.teach(); // Output: "I am teaching with teacher ID 5678."
+    teacher.teach(); // Output: "I am teaching with teacher ID 5678.
+
+
+
     
